@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     // Background Music
     // ============================================
-    const music = new Audio('Static/Tambor Urbano - Cumpleanos Feliz.mp3');
+    const music = new Audio('static/Tambor Urbano - Cumpleanos Feliz.mp3');
     music.loop = true;
     music.volume = 0.5;
 
