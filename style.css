@@ -604,25 +604,35 @@ body {
     padding: 20px;
   }
 
+  .message-container {
+    top: 55%;
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .message-container.show {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
   .title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .birthday-girl {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
   }
 
   .subtitle {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
   }
 
   .glass-card {
-    padding: 2rem 1.5rem;
+    padding: 1.8rem 1.2rem;
     border-radius: 20px;
-    max-height: 70vh;
-    overflow-y: auto;
   }
 
   .gift-box {
@@ -648,6 +658,7 @@ body {
 
   .gifts-preview {
     gap: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   .gift-item {
