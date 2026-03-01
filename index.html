@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern typography for premium look -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated background layers -->
+    <div class="turtles-bg" id="turtles-bg"></div>
+    <div class="turtles-bg layer-2" id="turtles-bg-2"></div>
+    <div class="turtles-bg layer-3" id="turtles-bg-3"></div>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="container" id="app-container">
+
+        <div class="gift-wrapper" id="gift-element">
+            <div class="gift-lid">
+                <div class="bow"></div>
+            </div>
+            <div class="gift-box">
+                <div class="ribbon-vertical"></div>
+                <div class="ribbon-horizontal"></div>
+            </div>
+        </div>
+
+        <p class="click-text" id="click-text">Toca para abrir</p>
+
+        <div class="message-container" id="message-container">
+            <div class="glass-card">
+                <h1 class="title">¡Feliz <span class="gradient-text">Cumpleaños!</span></h1>
+                <h2 class="birthday-girl">Tribarce</h2>
+                <p class="subtitle">
+                    Queremos desearte un muy feliz cumpleaños. Hoy es un día sumamente especial, tanto para ti como para
+                    nosotros, porque tu vida se celebra a lo grande.
+                    <br><br>
+                    Eres una persona que emana felicidad y una energía
+                    única; eres un verdadero ser de luz.
+                    <br><br>
+                    Tus queridos Nana, Turko, Abri y Nachi te deseamos lo mejor. Queremos decirte que, aun en la
+                    distancia, siempre estaremos presentes y nada nos impedirá ser especiales contigo en tu dia.
+                    <br><br>
+                    Revela tus regalos en los signos de interrogación.
+                </p>
+                <div class="gifts-preview">
+                    <div class="gift-item">
+                        <div class="question-mark">?</div>
+                        <img src="static/Dory.jpg" alt="Regalo Dory" class="gift-image">
+                    </div>
+                    <div class="gift-item">
+                        <div class="question-mark">?</div>
+                        <img src="static/Maquillaje2.jpg" alt="Regalo Maquillaje" class="gift-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
