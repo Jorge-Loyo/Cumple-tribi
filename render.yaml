@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cumple-tribi
+    env: static
+    buildCommand: echo "No build needed"
+    staticPublishPath: .
