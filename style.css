@@ -593,22 +593,36 @@ body {
    ==================================== 
 */
 @media (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  .container {
+    height: 100vh;
+    height: -webkit-fill-available;
+    padding: 20px;
+  }
+
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .birthday-girl {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   .glass-card {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     border-radius: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   .gift-box {
@@ -627,18 +641,36 @@ body {
   }
 
   .click-text {
-    font-size: 1rem;
-    bottom: 5%;
+    font-size: 0.9rem;
+    bottom: 8%;
+    letter-spacing: 2px;
+  }
+
+  .gifts-preview {
+    gap: 1.5rem;
+  }
+
+  .gift-item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .question-mark {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 380px) {
   .title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .birthday-girl {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
   }
 
   .gift-box {
@@ -651,6 +683,15 @@ body {
   }
 
   .glass-card {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .gifts-preview {
+    gap: 1rem;
+  }
+
+  .gift-item {
+    width: 55px;
+    height: 55px;
   }
 }
