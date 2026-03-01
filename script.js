@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
 
     // ============================================
+    // Background Music
+    // ============================================
+    const music = new Audio('Static/Tambor Urbano - Cumpleanos Feliz.mp3');
+    music.loop = true;
+    music.volume = 0.5;
+
+    // ============================================
     // Canvas & Resize Handling
     // ============================================
     let width, height;
@@ -157,6 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isOpened) return;
         isOpened = true;
 
+        // Play music
+        music.play().catch(e => console.log('Audio play failed:', e));
+
         // Trigger CSS animations
         giftElement.classList.add('opened');
         if (clickText) clickText.classList.add('fade-out');
@@ -171,7 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fire secondary cascading bursts
             setTimeout(burstConfetti, 500);
             setTimeout(burstConfetti, 1200);
-            setTimeout(burstConfetti, 2000); // Grand finale
+            setTimeout(burstConfetti, 2000);
+            setTimeout(burstConfetti, 3000);
+            setTimeout(burstConfetti, 4000);
+            setTimeout(burstConfetti, 5500);
+            setTimeout(burstConfetti, 7000);
+            setTimeout(burstConfetti, 8500);
 
         }, 500);
     });
